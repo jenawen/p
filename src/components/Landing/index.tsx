@@ -1,20 +1,27 @@
-import { Container, Center, Flex, Divider } from "@prismane/core";
-import { Text } from "@prismane/core";
+import { Container, Center, Flex } from "@prismane/core";
+import "./index.css";
+
 export const Landing = () => {
   return (
     <Center>
       <Flex direction="column" justify="center" w="100%">
         <Container maxSize="lg">
-          <div> Hellooo </div>
+          <div className="title"> Hellooo </div>
           {/* divider class */}
-          <div></div>
-          <div> line 1 </div>
-          <div> line 2 </div>
+          <div className="divider"></div>
+          <div className="sub-title">
+            {" "}
+            I’m a front-end developer from Las Vegas, NV.{" "}
+          </div>
+          <div className="sub-title">
+            {" "}
+            I transform data into interactive, elegant UI.{" "}
+          </div>
           <div> lil plant icon here </div>
           {/* divider class */}
-          <div></div>
-          <div> location </div>
-          <div> social media links </div>
+          <div className="divider"></div>
+          <div className="location"> Credit One Bank - IT Development </div>
+          <div className="links"> social media links </div>
         </Container>
       </Flex>
     </Center>
