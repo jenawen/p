@@ -2,11 +2,9 @@
   font-family: Quicksand Reg;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +28,7 @@ body {
 }
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #5f401a;
     background-color: #fbf8f4;
   }
   a:hover {
@@ -47,4 +45,8 @@ body {
     url(./fonts/Quicksand-Regular.ttf) format("truetype");
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
+}
+
+#icon-link:hover {
+  filter: drop-shadow(1px 1px 6px #b9795e);
 }

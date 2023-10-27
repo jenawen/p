@@ -1,5 +1,6 @@
 .title {
   font-size: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .sub-title {
@@ -7,7 +8,7 @@
 }
 
 .location {
-  font-size: 20px;
+  font-size: 18px;
 }
 .divider {
   border-bottom: 1px solid #5f401a;
