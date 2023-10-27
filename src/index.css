@@ -21,6 +21,13 @@ body {
   overflow: hidden;
 }
 
+.title {
+  font-size: 50px;
+}
+
+.normal-text {
+  font-size: 22px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
