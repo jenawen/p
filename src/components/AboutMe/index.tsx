@@ -4,7 +4,7 @@ export const AboutMe = () => {
   return (
     <>
       <Flex direction="column" justify="start" align="center">
-        <Box w={"85%"} pt={fr(25)}>
+        <Box w={"78%"} pt={fr(25)}>
           <Center py={fr(5)}>
             {" "}
             <div className="title">About Me</div>{" "}

@@ -46,3 +46,7 @@ body {
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
+
+#icon-link:hover {
+  filter: drop-shadow(1px 1px 6px #b9795e);
+}
