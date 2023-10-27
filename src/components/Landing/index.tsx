@@ -11,7 +11,8 @@ export const Landing = () => {
           <div className="divider"></div>
           <div className="sub-title">
             {" "}
-            I’m a front-end developer from Las Vegas, NV.{" "}
+            I’m a <span color="#B48A54">front-end developer</span> from Las
+            Vegas, NV.{" "}
           </div>
           <div className="sub-title">
             {" "}
