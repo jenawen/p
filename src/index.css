@@ -26,6 +26,7 @@ body {
 .normal-text {
   font-size: 22px;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #5f401a;
