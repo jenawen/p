@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Landing } from "../Landing";
 import { SideNavigation } from "../Navigation/SideNavigation";
 import { Flex, fr } from "@prismane/core";

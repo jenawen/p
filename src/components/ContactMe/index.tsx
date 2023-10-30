@@ -1,4 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import { Flex, Box, Center, fr } from "@prismane/core";
 import { useEffect, useState } from "react";
 import "./index.css";
@@ -13,7 +15,7 @@ export const ContactMe = (props: any) => {
     if (window.innerWidth <= 480) {
       setInputW("90%");
     }
-  });
+  }, []);
 
   const form_ep =
     "https://public.herotofu.com/v1/56b70060-178f-11ee-8025-97a9fb2f29da";
