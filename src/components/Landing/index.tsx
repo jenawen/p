@@ -1,4 +1,4 @@
-import { Container, Box, Flex, Image, Link } from "@prismane/core";
+import { Container, Box, Flex, Image } from "@prismane/core";
 import "./index.css";
 import linkedin from "../../assets/linkedin.svg";
 import github from "../../assets/github.svg";
@@ -19,7 +19,7 @@ export const Landing = () => {
             I’m a <span style={{ color: "#B48A54" }}>
               front-end developer
             </span>{" "}
-            from Las Vegas, NV.{" "}
+            based in Las Vegas.{" "}
           </Box>
           <Box className="sub-title" pt={12}>
             {" "}
