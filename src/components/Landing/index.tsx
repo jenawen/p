@@ -1,4 +1,4 @@
-import { Container, Box, Flex, Image, Link } from "@prismane/core";
+import { Container, Box, Flex, Image } from "@prismane/core";
 import "./index.css";
 import linkedin from "../../assets/linkedin.svg";
 import github from "../../assets/github.svg";
@@ -6,9 +6,12 @@ import resume from "../../assets/resume.svg";
 import location from "../../assets/location.svg";
 import cv from "../../../public/adkinsjena_resume.pdf";
 
-export const Landing = () => {
+export const Landing = (props: any) => {
+  const { paddingTopLanding } = props;
+  const width = window.innerWidth;
+
   return (
-    <Box pt={"15%"}>
+    <Box pt={paddingTopLanding}>
       <Flex direction="column" justify="center" w="100%">
         <Container maxSize="lg">
           <Box className="title"> Hi, I'm Jena. </Box>
@@ -19,7 +22,7 @@ export const Landing = () => {
             I’m a <span style={{ color: "#B48A54" }}>
               front-end developer
             </span>{" "}
-            from Las Vegas, NV.{" "}
+            based in Las Vegas.{" "}
           </Box>
           <Box className="sub-title" pt={12}>
             {" "}
@@ -46,28 +49,33 @@ export const Landing = () => {
             </a>
             &nbsp;- IT Development{" "}
           </Box>
-          <Flex
-            w="60%"
-            direction="row"
-            justify="around"
-            className="links"
-            align="center"
-          >
-            <a href="https://www.linkedin.com/in/jena-adkins/">
-              <img src={linkedin} id="icon-link" />
-            </a>
-            <a href="https://github.com/jenawen">
-              <img src={github} id="icon-link" />
-            </a>
-            <a
-              href={cv}
-              download="jenaadkins_resume"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={resume} id="icon-link" />
-            </a>
-          </Flex>
+          {width >= 1280 ? (
+            <>
+              {" "}
+              <Flex
+                w="60%"
+                direction="row"
+                justify="around"
+                className="links"
+                align="center"
+              >
+                <a href="https://www.linkedin.com/in/jena-adkins/">
+                  <img src={linkedin} id="icon-link" />
+                </a>
+                <a href="https://github.com/jenawen">
+                  <img src={github} id="icon-link" />
+                </a>
+                <a
+                  href={cv}
+                  download="jenaadkins_resume"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={resume} id="icon-link" />
+                </a>
+              </Flex>
+            </>
+          ) : null}
         </Container>
       </Flex>
     </Box>
