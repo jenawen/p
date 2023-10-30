@@ -4,7 +4,7 @@ export const AboutMe = () => {
   return (
     <>
       <Flex direction="column" justify="start" align="center">
-        <Box w={"78%"} pt={fr(20)}>
+        <Box w={"78%"} pt={"5%"}>
           <Center py={fr(5)}>
             {" "}
             <div className="title">About Me</div>{" "}
@@ -32,11 +32,21 @@ export const AboutMe = () => {
 
           <Box py={fr(2)}>
             <div className="normal-text">
-              I mostly utilize React and TypeScript. I have sufficient
-              experience with JavaScript, HTML5, CSS3, as well as automated unit
-              testing using Jest and Vitest. I often use Express and Node.js for
-              back-end functionality. Python and Streamlit are my favorites for
-              data visualization and analysis. I also love tinkering with Figma
+              I mostly utilize <span style={{ color: "#B48A54" }}>React</span>{" "}
+              and <span style={{ color: "#B48A54" }}>TypeScript</span>. I have
+              sufficient experience with{" "}
+              <span style={{ color: "#B48A54" }}>JavaScript</span>,{" "}
+              <span style={{ color: "#B48A54" }}>HTML5</span>,{" "}
+              <span style={{ color: "#B48A54" }}>CSS3</span>, as well as
+              automated unit testing using{" "}
+              <span style={{ color: "#B48A54" }}>Jest</span> and{" "}
+              <span style={{ color: "#B48A54" }}>Vitest</span>. I often use{" "}
+              <span style={{ color: "#B48A54" }}>Express</span> and{" "}
+              <span style={{ color: "#B48A54" }}>Node.js</span> for back-end
+              functionality. <span style={{ color: "#B48A54" }}>Python</span>{" "}
+              and <span style={{ color: "#B48A54" }}>Streamlit</span> are my
+              favorites for data visualization and analysis. I also love
+              tinkering with <span style={{ color: "#B48A54" }}>Figma </span>
               and UX design.
             </div>
           </Box>

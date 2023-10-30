@@ -16,13 +16,27 @@ body {
   margin: 0;
   padding: 0;
   border: 3px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .title {
   font-size: 45px;
   @media screen and (max-width: 1366px) {
     font-size: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+  }
+}
+
+.sub-title {
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+.location {
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
   }
 }
 
@@ -31,12 +45,21 @@ body {
   @media screen and (max-width: 1366px) {
     font-size: 18px;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+
+.divider {
+  border-bottom: 1px solid #5f401a;
+  width: 110%;
 }
 
 .project-title {
   font-size: 28px;
   font-weight: 700;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #5f401a;
@@ -67,4 +90,23 @@ body {
 
 #icon-link:hover {
   filter: drop-shadow(1px 1px 6px #b9795e);
+}
+
+input,
+textarea {
+  width: 100%;
+  border-bottom: 1px solid #5f401a;
+  font-family: Quicksand Reg;
+  padding: 15px 0px;
+  resize: none;
+}
+
+button {
+  font-family: Quicksand Reg;
+  font-size: 22px;
+  padding: 15px;
+}
+
+button:hover {
+  text-shadow: 1px 1px 6px #b9795e;
 }
