@@ -1,10 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Flex, Box, Center, fr } from "@prismane/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css";
 import send from "../../assets/send.svg";
 
-export const ContactMe = () => {
+export const ContactMe = (props: any) => {
+  const { pt } = props;
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [inputW, setInputW] = useState("150%");
+
+  useEffect(() => {
+    if (window.innerWidth <= 480) {
+      setInputW("90%");
+    }
+  });
+
   const form_ep =
     "https://public.herotofu.com/v1/56b70060-178f-11ee-8025-97a9fb2f29da";
 
@@ -44,7 +54,7 @@ export const ContactMe = () => {
   return (
     <>
       <Flex direction="column" justify="start" align="center">
-        <Box w={"150%"} pt={fr(25)}>
+        <Box w={inputW} pt={pt}>
           <Center py={fr(5)}>
             {" "}
             <div className="title">Contact Me</div>{" "}

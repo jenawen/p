@@ -1,0 +1,19 @@
+.pill {
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: #fbf8f4;
+  margin: auto;
+  padding: 1px 10px;
+  display: inline-block;
+  margin: 5px;
+  font-family: Quicksand Reg;
+  color: #8c5551;
+  border: 1px solid #8c5551;
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+}
+.pill:hover {
+  border: 1px solid #e7c6bc;
+  color: #e7c6bc;
+}

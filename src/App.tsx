@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Parent } from "./components/Parent";
 import { PrismaneProvider } from "@prismane/core";
 

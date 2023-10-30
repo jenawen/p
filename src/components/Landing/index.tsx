@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Container, Box, Flex, Image } from "@prismane/core";
 import "./index.css";
 import linkedin from "../../assets/linkedin.svg";
