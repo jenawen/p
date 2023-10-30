@@ -5,7 +5,7 @@ import { glucose, underwriting } from "./ProjectText";
 export const Projects = () => {
   return (
     <>
-      <Box w={"78%"} pt={fr(20)}>
+      <Box w={"78%"} pt={"5%"}>
         <Flex direction="column" justify="start" align="center">
           <Center py={fr(5)}>
             {" "}

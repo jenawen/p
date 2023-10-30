@@ -24,6 +24,20 @@ body {
   @media screen and (max-width: 1366px) {
     font-size: 40px;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+  }
+}
+
+.sub-title {
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+.location {
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .normal-text {
@@ -31,6 +45,14 @@ body {
   @media screen and (max-width: 1366px) {
     font-size: 18px;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+
+.divider {
+  border-bottom: 1px solid #5f401a;
+  width: 110%;
 }
 
 .project-title {
