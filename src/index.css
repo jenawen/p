@@ -100,6 +100,10 @@ textarea {
   font-family: Quicksand Reg;
   padding: 15px 0px;
   resize: none;
+  font-size: 18px;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 button {
