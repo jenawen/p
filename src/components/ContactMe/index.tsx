@@ -1,6 +1,7 @@
 import { Flex, Box, Center, fr } from "@prismane/core";
 import { useState } from "react";
 import "./index.css";
+import send from "../../assets/send.svg";
 
 export const ContactMe = () => {
   const [submitted, setSubmitted] = useState<boolean>(false);
@@ -43,7 +44,7 @@ export const ContactMe = () => {
   return (
     <>
       <Flex direction="column" justify="start" align="center">
-        <Box w={"78%"} pt={fr(25)}>
+        <Box w={"150%"} pt={fr(25)}>
           <Center py={fr(5)}>
             {" "}
             <div className="title">Contact Me</div>{" "}
@@ -55,11 +56,22 @@ export const ContactMe = () => {
 
               <input type="email" placeholder="Your email" name="email" />
 
-              <textarea placeholder="Your message" name="message" required />
+              <textarea
+                style={{ height: "100px" }}
+                placeholder="Your message"
+                name="message"
+                required
+              />
 
               <div style={{ textAlign: "center" }}>
-                <button style={{ fontFamily: "Quicksand" }} type="submit">
-                  Send
+                <button type="submit">
+                  <Center>
+                    Send{" "}
+                    <img
+                      src={send}
+                      style={{ height: "20px", paddingLeft: "5px" }}
+                    />{" "}
+                  </Center>
                 </button>
                 {submitted ? (
                   <>
