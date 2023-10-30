@@ -41,7 +41,7 @@ export const Landing = (props: any) => {
           <div className="divider"></div>
           <Box className="location" py={15}>
             {" "}
-            <img height="15px" src={location} />{" "}
+            <img height="15px" src={location} id="loc-icon" />{" "}
             <a
               style={{ color: "#B48A54" }}
               href="https://www.creditonebank.com/"
