@@ -51,3 +51,22 @@ body {
 #icon-link:hover {
   filter: drop-shadow(1px 1px 6px #b9795e);
 }
+
+input,
+textarea {
+  width: 100%;
+  border-bottom: 1px solid #5f401a;
+  font-family: Quicksand Reg;
+  padding: 15px 0px;
+  resize: none;
+}
+
+button {
+  font-family: Quicksand Reg;
+  font-size: 22px;
+  padding: 15px;
+}
+
+button:hover {
+  text-shadow: 1px 1px 6px #b9795e;
+}
