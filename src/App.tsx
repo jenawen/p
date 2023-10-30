@@ -4,7 +4,7 @@ import { PrismaneProvider } from "@prismane/core";
 function App() {
   return (
     <PrismaneProvider>
-      <Parent />;
+      <Parent />
     </PrismaneProvider>
   );
 }

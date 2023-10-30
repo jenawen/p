@@ -19,7 +19,7 @@ export const Parent = () => {
 
   useEffect(() => {
     if (width <= 480) {
-      setPaddingTopLanding("50%");
+      setPaddingTopLanding("44%");
       setPt(fr(10));
     } else {
       setPaddingTopLanding("15%");
