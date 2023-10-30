@@ -10,3 +10,10 @@
 .location {
   font-size: 18px;
 }
+
+#loc-icon {
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%) sepia(200%) saturate(0%) hue-rotate(340deg)
+      brightness(100%) contrast(99%);
+  }
+}

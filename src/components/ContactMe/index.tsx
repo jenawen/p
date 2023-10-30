@@ -82,6 +82,7 @@ export const ContactMe = (props: any) => {
                     <img
                       src={send}
                       style={{ height: "20px", paddingLeft: "5px" }}
+                      id="send-icon"
                     />{" "}
                   </Center>
                 </button>

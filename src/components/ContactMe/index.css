@@ -2,3 +2,9 @@
   display: flex;
   flex-direction: column;
 }
+#send-icon {
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%) sepia(200%) saturate(0%) hue-rotate(340deg)
+      brightness(100%) contrast(99%);
+  }
+}

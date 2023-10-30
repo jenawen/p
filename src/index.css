@@ -18,6 +18,10 @@ body {
   border: 3px;
   overflow-x: hidden;
   color: #5f401a;
+
+  @media (prefers-color-scheme: dark) {
+    color: #fbf8f4;
+  }
 }
 
 .title {
@@ -54,24 +58,14 @@ body {
 .divider {
   border-bottom: 1px solid #5f401a;
   width: 110%;
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 1px solid #fbf8f4;
+  }
 }
 
 .project-title {
   font-size: 28px;
   font-weight: 700;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #5f401a;
-    background-color: #fbf8f4;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @font-face {
@@ -89,6 +83,13 @@ body {
                             'embedded-opentype', and 'svg' */
 }
 
+#icon-link {
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%) sepia(200%) saturate(0%) hue-rotate(340deg)
+      brightness(100%) contrast(99%);
+  }
+}
+
 #icon-link:hover {
   filter: drop-shadow(1px 1px 6px #b9795e);
 }
@@ -104,14 +105,21 @@ textarea {
   @media screen and (max-width: 480px) {
     font-size: 14px;
   }
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 1px solid #fbf8f4;
+  }
 }
 
 button {
   font-family: Quicksand Reg;
   font-size: 22px;
   padding: 15px;
+  color: #5f401a;
   @media screen and (max-width: 480px) {
     font-size: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: #fbf8f4 !important;
   }
 }
 
