@@ -1,10 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Box, Center, Flex, fr } from "@prismane/core";
 
-export const AboutMe = () => {
+export const AboutMe = (props: any) => {
+  const { pt } = props;
   return (
     <>
       <Flex direction="column" justify="start" align="center">
-        <Box w={"78%"} pt={"5%"}>
+        <Box w={"78%"} pt={pt}>
           <Center py={fr(5)}>
             {" "}
             <div className="title">About Me</div>{" "}

@@ -1,6 +1,6 @@
 import { Landing } from "../Landing";
 import { SideNavigation } from "../Navigation/SideNavigation";
-import { Flex } from "@prismane/core";
+import { Flex, fr } from "@prismane/core";
 import "./index.css";
 import { useEffect, useState } from "react";
 import { Projects } from "../Projects";
@@ -12,12 +12,14 @@ import { MenuNavigation } from "../Navigation/MenuNavigation";
 export const Parent = () => {
   const [page, setPage] = useState("landing");
   const [paddingTopLanding, setPaddingTopLanding] = useState("");
+  const [pt, setPt] = useState(fr(20));
   const [openMenu, setOpenMenu] = useState(false);
   const width = window.innerWidth;
 
   useEffect(() => {
     if (width <= 480) {
-      setPaddingTopLanding("55%");
+      setPaddingTopLanding("52%");
+      setPt(fr(10));
     } else {
       setPaddingTopLanding("15%");
     }
@@ -48,11 +50,11 @@ export const Parent = () => {
               {page === "landing" ? (
                 <Landing paddingTopLanding={paddingTopLanding} />
               ) : page === "projects" ? (
-                <Projects />
+                <Projects pt={pt} />
               ) : page === "about me" ? (
-                <AboutMe />
+                <AboutMe pt={pt} />
               ) : page === "contact me" ? (
-                <ContactMe />
+                <ContactMe pt={pt} />
               ) : null}
             </Flex>
 

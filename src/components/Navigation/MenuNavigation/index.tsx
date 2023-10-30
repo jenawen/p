@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Flex } from "@prismane/core";
 import close from "../../../assets/close.svg";
 import cv from "../../../../public/adkinsjena_resume.pdf";

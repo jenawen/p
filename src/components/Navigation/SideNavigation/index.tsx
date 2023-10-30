@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Grid, fr, Center } from "@prismane/core";
 import home from "../../../assets/home.svg";
 import projects from "../../../assets/projects.svg";
