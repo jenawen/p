@@ -20,10 +20,8 @@ export const Landing = (props: any) => {
           <div className="divider"></div>
           <Box className="sub-title" pt={20}>
             {" "}
-            I’m a <span style={{ color: "#B48A54" }}>
-              front-end developer
-            </span>{" "}
-            based in Las Vegas.{" "}
+            I’m a <span style={{ color: "#B48A54" }}>web developer</span> based
+            in Las Vegas.{" "}
           </Box>
           <Box className="sub-title" pt={12}>
             {" "}
