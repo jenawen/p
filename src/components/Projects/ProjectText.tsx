@@ -15,7 +15,7 @@ export const glucose = {
   ],
 
   description:
-    "When my partner was suddenly diagnosed with diabetes, we had to make immediate lifestyle changes. Along with eating healthier, we also had to take readings for his blood sugar three times everyday until he saw his doctor again. I logged his glucose levels for each reading for a month and made a dashboard to visually see his progress. Just taking the readings and waiting to tell his doctor his results wasn’t enough for me; I made the dashboard in hopes of seeing his glucose levels trend downwards myself. For a month, I saw his glucose levels fall to a sustainable number and level out at a normal rate. I still maintain data for his readings to this day. I add new data when I can. ",
+    "When my partner was suddenly diagnosed with diabetes, we had to make immediate lifestyle changes. Along with eating healthier, we also had to take readings for his blood sugar three times everyday until he saw his doctor again. I logged his glucose levels for each reading for a month and made a dashboard to visually see his progress. I made the dashboard in hopes of seeing his glucose levels trend downwards myself. For a month, I saw his glucose levels fall to a sustainable number and level out at a normal rate. I still maintain data for his readings to this day. I add new data when I can. ",
 };
 
 export const sawara = {
