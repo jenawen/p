@@ -48,7 +48,7 @@ export const Landing = (props: any) => {
             </a>
             &nbsp;- IT Development{" "}
           </Box>
-          {width >= 1280 ? (
+          {width >= 1270 ? (
             <>
               {" "}
               <Flex

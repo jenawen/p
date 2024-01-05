@@ -35,7 +35,7 @@ export const Parent = () => {
       ) : (
         <>
           {" "}
-          {width >= 1280 ? null : (
+          {width >= 1270 ? null : (
             <Flex p={"15px"} justify="end">
               <img
                 id="icon-link"
@@ -59,7 +59,7 @@ export const Parent = () => {
               ) : null}
             </Flex>
 
-            {width >= 1280 ? (
+            {width >= 1270 ? (
               <>
                 <Flex h="100%" w="6%" justify="center" align="start">
                   <SideNavigation setPage={setPage} />
